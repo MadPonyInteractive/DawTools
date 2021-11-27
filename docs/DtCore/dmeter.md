@@ -7,7 +7,7 @@ parent: DtCore
 
 # DawTools.DtCore.DMeter
 
-The [DMeter](dmeter.html) class provides a surface
+The [DMeter](dmeter.html#class-dawtoolsdtcoredmeter) class provides a surface
 to work with note values and seconds. [More...](dmeter.html#detailed-description)
 
 | Inheritance            |
@@ -25,17 +25,17 @@ to work with note values and seconds. [More...](dmeter.html#detailed-description
 
 | Methods |
 |:----------|
-|def [\_\_call\_\_()](dmeter.html)|
-|def [seconds()](dmeter.html)|
-|def [beats()](dmeter.html)|
-|def [bars()](dmeter.html)|
-|def [quantizeUnits()](dmeter.html)|
-|def [barsPerNote()](dmeter.html)|
-|def [secondsPerNote()](dmeter.html)|
-|def [secondsPerBeat()](dmeter.html)|
-|def [secondsPerBar()](dmeter.html)|
-|def [tupletsPerNote()](dmeter.html)|
-|def [secondsPerQuantize()](dmeter.html)|
+|def [\_\_call\_\_()](dmeter.html#dawtoolsdtcoredmeter__call__notevalue)|
+|def [beats()](dmeter.html#dawtoolsdtcoredmeterbeats)|
+|def [bars()](dmeter.html#dawtoolsdtcoredmeterbars)|
+|def [quantizeUnits()](dmeter.html#dawtoolsdtcoredmeterquantizeunits)|
+|def [barsPerNote()](dmeter.html#dawtoolsdtcoredmeterbarspernote)|
+|def [tupletsPerNote()](dmeter.html#dawtoolsdtcoredmetertupletspernote)|
+|def [seconds()](dmeter.html#dawtoolsdtcoredmeterseconds)|
+|def [secondsPerNote()](dmeter.htmll#dawtoolsdtcoredmetersecondspernote)|
+|def [secondsPerBeat()](dmeter.html#dawtoolsdtcoredmetersecondsperbeat)|
+|def [secondsPerBar()](dmeter.html#dawtoolsdtcoredmetersecondsperbar)|
+|def [secondsPerQuantize()](dmeter.html#dawtoolsdtcoredmetersecondsperquantize)|
 
 ### Detailed Description
 Music meter object that can retrieve note values
@@ -122,16 +122,6 @@ Return noteValue |
 
 ***
 
-## DawTools.DtCore.DMeter.seconds()
-
-* Return type
-
-  * [`DawTools.DtCore.DSeconds`](https://madponyinteractive.github.io/DawTools/DtCore/dseconds.html)
-
-Return How many seconds in noteValue |
-
-***
-
 ## DawTools.DtCore.DMeter.beats()
 
 * Return type
@@ -156,7 +146,7 @@ Return How many bars in noteValue |
 
 * Return type
 
-  * `float`
+  * [`DawTools.DtCore.DNoteValue`](https://madponyinteractive.github.io/DawTools/DtCore/dnotevalue.html)
 
 Return How many quantize units in noteValue |
 
@@ -166,9 +156,29 @@ Return How many quantize units in noteValue |
 
 * Return type
 
-  * `float`
+  * [`DawTools.DtCore.DNoteValue`](https://madponyinteractive.github.io/DawTools/DtCore/dnotevalue.html)
 
 Return How many bars in 1 whole note |
+
+***
+
+## DawTools.DtCore.DMeter.tupletsPerNote()
+
+* Return type
+
+  * [`DawTools.DtCore.DNoteValue`](https://madponyinteractive.github.io/DawTools/DtCore/dnotevalue.html)
+
+Return How many tuplets in 1 whole note |
+
+***
+
+## DawTools.DtCore.DMeter.seconds()
+
+* Return type
+
+  * [`DawTools.DtCore.DSeconds`](https://madponyinteractive.github.io/DawTools/DtCore/dseconds.html)
+
+Return How many seconds in noteValue |
 
 ***
 
@@ -199,16 +209,6 @@ Return How many seconds there are in 1 beat |
   * [`DawTools.DtCore.DSeconds`](https://madponyinteractive.github.io/DawTools/DtCore/dseconds.html)
 
 Return How many seconds there are in 1 bar |
-
-***
-
-## DawTools.DtCore.DMeter.tupletsPerNote()
-
-* Return type
-
-  * `Decimal`
-
-Return How many tuplets in 1 whole note |
 
 ***
 

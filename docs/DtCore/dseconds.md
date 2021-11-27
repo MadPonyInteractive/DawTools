@@ -18,7 +18,7 @@ to convert seconds to other units of time. [More...](dseconds.html#detailed-desc
 
 | Attributes|                  |
 |:----------|:-----------------|
-| value     | float(bpm value) |
+| value     | float(seconds value) |
 
 | Methods |
 |:----------|
@@ -50,7 +50,6 @@ It is used together with other classes for ease seconds conversions.
 
 ```python
 seconds = DSeconds(1)
-
 print(seconds())       # 1
 print(seconds.ms())    # 1000
 print(seconds.micro()) # 1000000
@@ -73,14 +72,14 @@ The object can work with different data types:
 * float
 * decimal
 
-You should make sure you are not combining different types or it will throw an error.
+You should make sure you are not combining decimal type with int of float or it will throw an error.
 
 ```python
 # Starting with type int
 seconds = DSeconds(1)
 
 # Trying an add operation with a different type of decimal
-# seconds += DSeconds(Decimal(10))
+seconds += DSeconds(Decimal(10))
 # TypeError: unsupported operand type(s) for +=: 'float' and 'decimal.Decimal'
 
 # We need to first convert or create a new object
@@ -101,13 +100,13 @@ Constructs a DSeconds object.|
 
 ***
 
-## DawTools.DtCore.DBpm.\_\_call\_\_()
+## DawTools.DtCore.DSeconds.\_\_call\_\_()
 
 * Return type
 
-  * `float`
-
   * `int`
+
+  * `float`
 
   * `decimal`
 

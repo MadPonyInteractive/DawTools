@@ -113,6 +113,8 @@ Return How many bars in 1 whole note |
 
 Return DNoteValue for bars |
 
+***
+
 ## DawTools.DtCore.DTimeSignature.beatValue()
 
 * Return type

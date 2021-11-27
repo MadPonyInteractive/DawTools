@@ -7,7 +7,7 @@ parent: DtCore
 
 # DawTools.DtCore.DQuantize
 
-The [DQuantize](dquantize.html#class-dawtoolsdtcoredquantizeargs) class provides a surface
+The [DQuantize](dquantize.html#class-dawtoolsdtcoredquantize) class provides a surface
 to work with quantization. [More...](dquantize.html#detailed-description)
 
 | Inheritance            |
@@ -25,10 +25,10 @@ to work with quantization. [More...](dquantize.html#detailed-description)
 
 | Methods |
 |:----------|
-|def [\_\_call\_\_()](dquantize.html#dawtoolsdtcoredquantize__call__args)|
-|def [tupletsPerNote()](dquantize.html)|
-|def [quantizePerNote()](dquantize.html)|
-|def [quantizeValue()](dquantize.html)|
+|def [\_\_call\_\_()](dquantize.html#dawtoolsdtcoredquantize__call__valuenone)|
+|def [tupletsPerNote()](dquantize.html#dawtoolsdtcoredquantizetupletspernote)|
+|def [quantizePerNote()](dquantize.html#dawtoolsdtcoredquantizequantizepernote)|
+|def [quantizeValue()](dquantize.html#dawtoolsdtcoredquantizequantizevalue)|
 
 ### Detailed Description
 This class can retrieve note value (note duration) for quantize units based on the given
@@ -70,6 +70,7 @@ print(quantize_2)
 
 ## class DawTools.DtCore.DQuantize
 DawTools.DtCore.DQuantize(DQuantize)
+
 DawTools.DtCore.DQuantize(value=8, style='straight', tuplet=(3,2), swing=60)
 
 * Parameters
@@ -125,3 +126,20 @@ Return How many quantize units in 1 whole note |
 
 Return DNoteValue for quantize units |
 Return tuple(DNoteValue(note1), DNoteValue(note2)) | If DQuantize.style is 'swing' |
+
+```python
+quantize = DQuantize()
+# Swing outputs 2 note values
+quantize.style = 'swing'
+print(quantize.quantizeValue())
+# (DNoteValue(value=0.15), DNoteValue(value=0.1))
+
+# Straight and Tuplet have a stable length per unit
+# so they only output 1 value
+quantize.style = 'tuplet'
+print(quantize.quantizeValue())# 1/12
+
+# Get length in seconds
+print(DBpm(145).seconds(quantize.quantizeValue()))
+# DSeconds(value=Decimal('0.137931'))
+```

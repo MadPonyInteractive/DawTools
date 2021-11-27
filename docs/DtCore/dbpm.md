@@ -8,7 +8,7 @@ parent: DtCore
 # DawTools.DtCore.DBpm
 
 The [DBpm](dbpm.html#dataclass-dawtoolsdtcoredbpmvalue) class provides a surface
-to convert [DawTools.DtCore.DNoteValue](https://madponyinteractive.github.io/daw-tools/DtCore/dnotevalue.htm)
+to convert [DawTools.DtCore.DNoteValue](https://madponyinteractive.github.io/DawTools/DtCore/dnotevalue.html)
  objects to seconds. [More...](dbpm.html#detailed-description)
 
 | Inheritance            |
@@ -37,8 +37,8 @@ to convert [DawTools.DtCore.DNoteValue](https://madponyinteractive.github.io/daw
 |def [secondsPerNote()](dbpm.html#dawtoolsdtcoredbpmsecondspernote)|
 
 ### Detailed Description
-This @dataclass can be used for simple conversions from a [DawTools.DtCore.DNoteValue](https://madponyinteractive.github.io/daw-tools/DtCore/dnotevalue.htm)
-object to a [DawTools.DtCore.DSeconds](https://madponyinteractive.github.io/daw-tools/DtCore/dseconds.htm)
+This @dataclass can be used for simple conversions from a [DawTools.DtCore.DNoteValue](https://madponyinteractive.github.io/DawTools/DtCore/dnotevalue.html)
+object to a [DawTools.DtCore.DSeconds](https://madponyinteractive.github.io/DawTools/DtCore/dseconds.html)
 object for retrieval of seconds in a note value.
 
 It is also meant to be used with DawTools.DtCore.DMeter
@@ -72,11 +72,11 @@ Constructs a DBpm object.|
 ## DawTools.DtCore.DBpm.seconds(noteValue)
 * Parameters
 
-  * **noteValue** - [`DawTools.DtCore.DNoteValue`](https://madponyinteractive.github.io/daw-tools/DtCore/dnotevalue.htm)
+  * **noteValue** - [`DawTools.DtCore.DNoteValue`](https://madponyinteractive.github.io/DawTools/DtCore/dnotevalue.html)
 
 * Return type
 
-  * [`DawTools.DtCore.DSeconds`](https://madponyinteractive.github.io/daw-tools/DtCore/dseconds.htm)
+  * [`DawTools.DtCore.DSeconds`](https://madponyinteractive.github.io/DawTools/DtCore/dseconds.html)
 
 Returns DSeconds object with seconds in noteValue|
 
@@ -99,13 +99,13 @@ Returns seconds in 1 whole note|
 
   value - `float`
 
-  value - [`DawTools.DtCore.DNoteValue`](https://madponyinteractive.github.io/daw-tools/DtCore/dnotevalue.htm)
+  value - [`DawTools.DtCore.DNoteValue`](https://madponyinteractive.github.io/DawTools/DtCore/dnotevalue.html)
 
 * Return type
 
   * `float`
 
-  * [`DawTools.DtCore.DSeconds`](https://madponyinteractive.github.io/daw-tools/DtCore/dseconds.htm)
+  * [`DawTools.DtCore.DSeconds`](https://madponyinteractive.github.io/DawTools/DtCore/dseconds.html)
 
 
 Sets DBpm.value If value is of type float or int|

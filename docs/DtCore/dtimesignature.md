@@ -7,7 +7,7 @@ parent: DtCore
 
 # DawTools.DtCore.DTimeSignature
 
-The [DTimeSignature](dtimesignature.html#dataclass-dawtoolsdtcoredtimesignatureargs) class provides a surface
+The [DTimeSignature](dtimesignature.html#class-dawtoolsdtcoredtimesignatureargs) class provides a surface
 to work with time signatures. [More...](dtimesignature.html#detailed-description)
 
 | Inheritance            |
@@ -25,10 +25,10 @@ to work with time signatures. [More...](dtimesignature.html#detailed-description
 |:----------|
 |def \_\_str\_\_()|
 |def \_\_iter\_\_()|
-|def [\_\_call\_\_()](dtimesignature.html#dawtoolsdtcoredseconds__call__args)|
-|def [barsPerNote()](dtimesignature.html)|
-|def [barValue()](dtimesignature.html)|
-|def [beatValue()](dtimesignature.html)|
+|def [\_\_call\_\_()](dtimesignature.html#dawtoolsdtcoredtimesignature__call__args)|
+|def [barsPerNote()](dtimesignature.html#dawtoolsdtcoredtimesignaturebarspernote)|
+|def [barValue()](dtimesignature.html#dawtoolsdtcoredtimesignaturebarvalue)|
+|def [beatValue()](dtimesignature.html#dawtoolsdtcoredtimesignaturebeatvalue)|
 
 ### Detailed Description
 Time signatures influence the length of bars and beats. This class can retrieve
@@ -55,6 +55,12 @@ print(float(time_sig.beatValue()))# 4.0
 # Change time signature
 time_sig(4,8)
 print(time_sig)# 4/8
+
+# Copy object
+time_sig_2 = DTimeSignature(time_sig)
+time_sig_2.beatsPerBar = 8
+print(time_sig)# 4/8
+print(time_sig_2)# 8/8
 ```
 
 ***

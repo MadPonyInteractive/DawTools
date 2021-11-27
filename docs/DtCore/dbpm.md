@@ -41,7 +41,7 @@ This @dataclass can be used for simple conversions from a [DawTools.DtCore.DNote
 object to a [DawTools.DtCore.DSeconds](https://madponyinteractive.github.io/DawTools/DtCore/dseconds.html)
 object for retrieval of seconds in a note value.
 
-It is also meant to be used with DawTools.DtCore.DMeter
+It is also meant to be used with [DawTools.DtCore.DMeter](https://madponyinteractive.github.io/DawTools/DtCore/dmeter.html)
 
 ```python
 bpm = DBpm(120)

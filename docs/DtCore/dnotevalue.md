@@ -95,6 +95,22 @@ print(noteVal)# 10/1
 noteVal = DNoteValue(0.5657)
 print(noteVal)# 0.5657/1
 
+# Using add, sub, mul and div
+noteVal = DNoteValue('1/2')
+noteVal += '1/2'
+print(noteVal)# 1/1
+print(noteVal())# 1.0
+
+noteVal += 0.5
+print(noteVal)# 3/2
+print(noteVal())# 1.5
+
+noteVal_2 = DNoteValue(0.5)
+
+noteVal -= noteVal_2
+print(noteVal)# 1/1
+print(noteVal())# 1.0
+
 # Finally, iterating will return the
 # nominator/denominator values
 for i in noteVal:

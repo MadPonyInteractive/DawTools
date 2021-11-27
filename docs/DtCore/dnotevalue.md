@@ -111,12 +111,6 @@ noteVal -= noteVal_2
 print(noteVal)# 1/1
 print(noteVal())# 1.0
 
-# Finally, iterating will return the
-# nominator/denominator values
-for i in noteVal:
-    print(i)
-# 0.5657
-# 1
 ```
 
 ***

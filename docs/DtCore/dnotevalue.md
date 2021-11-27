@@ -7,8 +7,8 @@ parent: DtCore
 
 # DawTools.DtCore.DNoteValue
 
-The [DNoteValue](dquantize.html) class provides a surface
-to work with note values as strings or floats. [More...](dquantize.html#detailed-description)
+The [DNoteValue](dnotevalue.html#class-dawtoolsdtcorednotevalue) class provides a surface
+to work with note values as strings or floats. [More...](dnotevalue.html#detailed-description)
 
 | Inheritance            |
 |:-----------------------|
@@ -23,20 +23,20 @@ to work with note values as strings or floats. [More...](dquantize.html#detailed
 
 | Methods |
 |:----------|
-|def \_\add\_\_()|
-|def \_\sub\_\_()|
-|def \_\mul\_\_()|
-|def \_\truediv\_\_()|
-|def \_\eq\_\_()|
-|def \_\gt\_\_()|
-|def \_\ge\_\_()|
-|def \_\lt\_\_()|
-|def \_\le\_\_()|
-|def \_\float\_\_()|
-|def \_\str\_\_()|
-|def \_\iter\_\_()|
-|def [\_\_call\_\_()](dquantize.html#)|
-|def [findNoteValue()](dquantize.html#)|
+|def \_\_add\_\_()|
+|def \_\_sub\_\_()|
+|def \_\_mul\_\_()|
+|def \_\_truediv\_\_()|
+|def \_\_eq\_\_()|
+|def \_\_gt\_\_()|
+|def \_\_ge\_\_()|
+|def \_\_lt\_\_()|
+|def \_\_le\_\_()|
+|def \_\_float\_\_()|
+|def \_\_str\_\_()|
+|def \_\_iter\_\_()|
+|def [\_\_call\_\_()](dnotevalue.html#dawtoolsdtcorednotevalue__call__value)|
+|def [findNoteValue()](dnotevalue.html#dawtoolsdtcorednotevaluefindnotevalue)|
 
 ### Detailed Description
 Note Value class that can convert float
@@ -44,12 +44,12 @@ to note value 0.5 = 1/2 interchangeably
 Used for working with note values
 
 #### Some Note Values
-    - 1.0   = 1/1  = 1 Whole note
-    - 0.5   = 1/2  = Half note
-    - 0.25  = 1/4  = Quarter note
-    - 0.375 = 3/8  = Three eight note
-    - 10.0  = 10/1 = 10 Whole notes
-    - 0.0   = 0    = 0 Whole notes
+    * 1.0   = 1/1  = 1 Whole note
+    * 0.5   = 1/2  = Half note
+    * 0.25  = 1/4  = Quarter note
+    * 0.375 = 3/8  = Three eight note
+    * 10.0  = 10/1 = 10 Whole notes
+    * 0.0   = 0    = 0 Whole notes
 
 Calling this class will always retrieve a float
 
@@ -140,11 +140,11 @@ for a note value in float format.
 You do not need to call this method, you can
 simply use str(DNoteValue) or tuple(DNoteValue)
 
-Note:
-    It will return the first possible combination,|
-    so even though 4/8 = 0.5|
-    when you try findNoteValue(0.5)|
-    it will return 1/2|
+#### Note:
+    `It will return the first possible combination,
+        so even though 4/8 = 0.5
+        when you try findNoteValue(0.5)
+        it will return 1/2`
 
 * Parameters
 

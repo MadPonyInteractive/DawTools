@@ -6,7 +6,8 @@ color_scheme: "mpi"
 # Aux links for the upper right navigation
 aux_links:
   "DawTools on GitHub":
-    - "//github.com/MadPonyInteractive/daw-tools"
+    - "//github.com/MadPonyInteractive/DawTools"
+
 
 # Enable or disable the site search
 # Supports true (default) or false

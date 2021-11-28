@@ -38,7 +38,7 @@ to convert [DawTools.DtCore.DNoteValue](https://madponyinteractive.github.io/Daw
 
 ### Detailed Description
 This @dataclass can be used for simple conversions from a [DawTools.DtCore.DNoteValue](https://madponyinteractive.github.io/DawTools/DtCore/dnotevalue.html)
-object to a [DawTools.DtCore.DSeconds](https://madponyinteractive.github.io/DawTools/DtCore/dseconds.html)
+object to a [DawTools.DtCore.DTime.DSeconds](https://madponyinteractive.github.io/DawTools/DtCore/dtime.html#dawtoolsdtcoredtimedseconds)
 object for retrieval of seconds in a note value.
 
 It is also meant to be used with [DawTools.DtCore.DMeter](https://madponyinteractive.github.io/DawTools/DtCore/dmeter.html)
@@ -76,7 +76,7 @@ Constructs a DBpm object.|
 
 * Return type
 
-  * [`DawTools.DtCore.DSeconds`](https://madponyinteractive.github.io/DawTools/DtCore/dseconds.html)
+  * [`DawTools.DtCore.DTime.DSeconds`](https://madponyinteractive.github.io/DawTools/DtCore/dtime.html#dawtoolsdtcoredtimedseconds)
 
 Returns DSeconds object with seconds in noteValue|
 
@@ -105,7 +105,7 @@ Returns seconds in 1 whole note|
 
   * `float`
 
-  * [`DawTools.DtCore.DSeconds`](https://madponyinteractive.github.io/DawTools/DtCore/dseconds.html)
+  * [`DawTools.DtCore.DTime.DSeconds`](https://madponyinteractive.github.io/DawTools/DtCore/dtime.html#dawtoolsdtcoredtimedseconds)
 
 
 Sets DBpm.value If value is of type float or int|

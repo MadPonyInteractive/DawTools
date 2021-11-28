@@ -176,7 +176,7 @@ Return How many tuplets in 1 whole note |
 
 * Return type
 
-  * [`DawTools.DtCore.DSeconds`](https://madponyinteractive.github.io/DawTools/DtCore/dseconds.html)
+  * [`DawTools.DtCore.DTime.DSeconds`](https://madponyinteractive.github.io/DawTools/DtCore/dtime.html#dawtoolsdtcoredtimedseconds)
 
 Return How many seconds in noteValue |
 
@@ -186,7 +186,7 @@ Return How many seconds in noteValue |
 
 * Return type
 
-  * [`DawTools.DtCore.DSeconds`](https://madponyinteractive.github.io/DawTools/DtCore/dseconds.html)
+  * [`DawTools.DtCore.DTime.DSeconds`](https://madponyinteractive.github.io/DawTools/DtCore/dtime.html#dawtoolsdtcoredtimedseconds)
 
 Return How many seconds in 1 whole note |
 
@@ -196,7 +196,7 @@ Return How many seconds in 1 whole note |
 
 * Return type
 
-  * [`DawTools.DtCore.DSeconds`](https://madponyinteractive.github.io/DawTools/DtCore/dseconds.html)
+  * [`DawTools.DtCore.DTime.DSeconds`](https://madponyinteractive.github.io/DawTools/DtCore/dtime.html#dawtoolsdtcoredtimedseconds)
 
 Return How many seconds there are in 1 beat |
 
@@ -206,7 +206,7 @@ Return How many seconds there are in 1 beat |
 
 * Return type
 
-  * [`DawTools.DtCore.DSeconds`](https://madponyinteractive.github.io/DawTools/DtCore/dseconds.html)
+  * [`DawTools.DtCore.DTime.DSeconds`](https://madponyinteractive.github.io/DawTools/DtCore/dtime.html#dawtoolsdtcoredtimedseconds)
 
 Return How many seconds there are in 1 bar |
 
@@ -216,6 +216,6 @@ Return How many seconds there are in 1 bar |
 
 * Return type
 
-  * [`DawTools.DtCore.DSeconds`](https://madponyinteractive.github.io/DawTools/DtCore/dseconds.html)
+  * [`DawTools.DtCore.DTime.DSeconds`](https://madponyinteractive.github.io/DawTools/DtCore/dtime.html#dawtoolsdtcoredtimedseconds)
 
 Return How many seconds there are in 1 quantize unit |

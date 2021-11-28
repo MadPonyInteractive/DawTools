@@ -7,7 +7,7 @@ parent: DtCore
 
 # DawTools.DtCore.DTime.DSeconds
 
-The [DSeconds](dtime.html#dataclass-dawtoolsdtcoredsecondsvalue) class provides a surface
+The [DSeconds](dtime.html#dataclass-dawtoolsdtcoredtimedsecondsvalue) class provides a surface
 to convert seconds to other units of time. [More...](dtime.html#detailed-description)
 
 | Inheritance            |
@@ -31,7 +31,7 @@ to convert seconds to other units of time. [More...](dtime.html#detailed-descrip
 |def \_\_gt\_\_()|
 |def \_\_le\_\_()|
 |def \_\_lt\_\_()|
-|def [\_\_call\_\_()](dtime.html#dawtoolsdtcoredseconds__call__)|
+|def [\_\_call\_\_()](dtime.html#dawtoolsdtcoredtimedseconds__call__)|
 |def hours()|
 |def minutes()|
 |def ms()|

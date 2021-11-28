@@ -1,18 +1,18 @@
 ---
 layout: default
-title: DSeconds
+title: DTime
 parent: DtCore
 # nav_order: 1
 ---
 
-# DawTools.DtCore.DSeconds
+# DawTools.DtCore.DTime.DSeconds
 
-The [DSeconds](dseconds.html#dataclass-dawtoolsdtcoredsecondsvalue) class provides a surface
-to convert seconds to other units of time. [More...](dseconds.html#detailed-description)
+The [DSeconds](dtime.html#dataclass-dawtoolsdtcoredsecondsvalue) class provides a surface
+to convert seconds to other units of time. [More...](dtime.html#detailed-description)
 
 | Inheritance            |
 |:-----------------------|
-| DawTools.DtCore.DSeconds|
+| DawTools.DtCore.DTime.DSeconds|
 
 ***
 
@@ -31,7 +31,7 @@ to convert seconds to other units of time. [More...](dseconds.html#detailed-desc
 |def \_\_gt\_\_()|
 |def \_\_le\_\_()|
 |def \_\_lt\_\_()|
-|def [\_\_call\_\_()](dseconds.html#dawtoolsdtcoredseconds__call__)|
+|def [\_\_call\_\_()](dtime.html#dawtoolsdtcoredseconds__call__)|
 |def hours()|
 |def minutes()|
 |def ms()|
@@ -49,6 +49,7 @@ This @dataclass can be used for simple conversions from seconds to:
 It is used together with other classes for ease seconds conversions.
 
 ```python
+from DawTools.DtCore.DTime import DSeconds
 seconds = DSeconds(1)
 print(seconds())       # 1
 print(seconds.ms())    # 1000
@@ -89,7 +90,7 @@ print(seconds)# DSeconds(value=Decimal('10.5'))
 ```
 ***
 
-## @dataclass DawTools.DtCore.DSeconds(value)
+## @dataclass DawTools.DtCore.DTime.DSeconds(value)
 * Parameters
 
   * **value** - `int` -> default = 0
@@ -100,7 +101,7 @@ Constructs a DSeconds object.|
 
 ***
 
-## DawTools.DtCore.DSeconds.\_\_call\_\_()
+## DawTools.DtCore.DTime.DSeconds.\_\_call\_\_()
 
 * Return type
 

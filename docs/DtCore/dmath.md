@@ -8,15 +8,15 @@ parent: DtCore
 
 | Functions |
 |:----------|
-|def [DMapVal()](dmath.html)|
-|def [DNearlyEqual()](dmath.html)|
-|def [DCloseIn()](dmath.html)|
-|def [DClosest()](dmath.html)|
-|def [DRemoveExponent()](dmath.html)|
+|def [DMapVal()](dmath.html#dawtoolsdtcoredmathdmapvalvalue-in_start-in_end-out_start-out_end)|
+|def [DNearlyEqual()](dmath.html#dawtoolsdtcoredmathdnearlyequala-b-decimal_size)|
+|def [DCloseIn()](dmath.html#dawtoolsdtcoredmathdcloseina-check_list-decimal_size)|
+|def [DClosest()](dmath.html#dawtoolsdtcoredmathdclosestnum-check_list)|
+|def [DRemoveExponent()](dmath.html#dawtoolsdtcoredmathdremoveexponentd)|
 
 | Classes |
 |:----------|
-| [DRange](dmath.html)|
+| [DRange](dmath.html#dawtoolsdtcoredmathdrange)|
 
 ***
 
@@ -105,7 +105,7 @@ Return Decimal with removed exponent|
 ***
 
 ## DawTools.DtCore.DMath.DRange
-The [DRange](dmath.html) class provides a surface
+The [DRange](dmath.html#class-dawtoolsdtcoredmathdrangeargs) class provides a surface
 to retrieve normalized and de-normalized values within a set range.
 [More...](dmath.html#drange-detailed-description)
 
@@ -118,9 +118,9 @@ to retrieve normalized and de-normalized values within a set range.
 
 | Methods |
 |:----------|
-|def [\_\_call\_\_()](dmath.html)|
-|def [normalize()](dmath.html)|
-|def [deNormalize()](dmath.html)|
+|def [\_\_call\_\_()](dmath.html#dawtoolsdtcoredmathdrange__call__valueinverted)|
+|def [normalize()](dmath.html#dawtoolsdtcoredmathdrangenormalizevalueinverted)|
+|def [deNormalize()](dmath.html#dawtoolsdtcoredmathdrangedenormalizevalueinverted)|
 
 ### DRange Detailed Description
 This class provides methods to retrieve normalized and

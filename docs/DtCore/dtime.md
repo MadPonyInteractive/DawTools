@@ -4,6 +4,13 @@ title: DTime
 parent: DtCore
 # nav_order: 1
 ---
+# Module DawTools.DtCore.DTime
+
+| Classes |
+|:----------|
+| [DSeconds](dtime.html#dawtoolsdtcoredtimedseconds)|
+
+***
 
 # DawTools.DtCore.DTime.DSeconds
 
